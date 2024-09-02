@@ -15,17 +15,29 @@ function Shoes(props: any) {
   };
   const { scrollYProgress } = useScroll();
   const shoeRef = useRef<THREE.Group>(null!);
+  const [dimensions, setDimensions] = useState({
+    width: 1432, // Fallback values
+    height: 776,
+  });
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detect screen width on mount and on resize
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth <= 768);
+    }
+  }, []);
+
   useEffect(() => {
     const handleResize = () => {
       if (typeof window !== "undefined") {
-        setIsMobile(window.innerWidth <= 768); // 768px is a common breakpoint for mobile
+        setDimensions({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
       }
     };
 
-    handleResize(); // Check initial size
+    handleResize(); // Set initial values
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
@@ -118,12 +130,7 @@ function Shoes(props: any) {
   const xPos = useTransform(
     scrollYProgress,
     [0, 0.35, 0.7, 1],
-    [
-      0,
-      xPositionValue,
-      0.2,
-      typeof window !== "undefined" ? (4.8 * 1432) / window.innerWidth : 4.8,
-    ]
+    [0, xPositionValue, 0.2, (4.8 * 1432) / dimensions.width]
   );
   const yPos = useTransform(
     scrollYProgress,
@@ -131,8 +138,8 @@ function Shoes(props: any) {
     [
       -0.5,
       yPositionValue,
-      typeof window !== "undefined" ? (-1 * 776) / window.innerHeight : -1,
-      typeof window !== "undefined" ? -2.2 * (window.innerHeight / 776) : -2.2,
+      (-1 * 776) / dimensions.height,
+      -2.2 * (dimensions.height / 776),
     ]
   );
   const zPos = useTransform(

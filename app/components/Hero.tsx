@@ -14,10 +14,6 @@ const redactedScript = Redacted_Script({
 });
 
 function Hero({ scrollYProgress }: any) {
-  const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "2000deg"]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, -5]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, -4]);
-
   return (
     <section className=" w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden">
       <motion.div

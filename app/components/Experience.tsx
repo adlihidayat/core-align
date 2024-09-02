@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Shoes from "./Shoes";
 import { useScroll } from "framer-motion";
 import { OrbitControls } from "@react-three/drei";
+import dynamic from "next/dynamic";
+
+const Shoes = dynamic(() => import("./Shoes"), { ssr: false });
 
 const Experience = ({ page2Status }: any) => {
   const [isFreeRotate, setIsFreeRotate] = useState(false);

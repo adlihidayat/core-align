@@ -24,23 +24,18 @@ function Shoes(props: any) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       setIsMobile(window.innerWidth <= 768);
-    }
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (typeof window !== "undefined") {
+      const handleResize = () => {
         setDimensions({
           width: window.innerWidth,
           height: window.innerHeight,
         });
-      }
-    };
+      };
 
-    handleResize(); // Set initial values
-    window.addEventListener("resize", handleResize);
+      handleResize(); // Set initial values
+      window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
 
   //initialize rotation val

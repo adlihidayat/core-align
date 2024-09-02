@@ -20,7 +20,9 @@ function Shoes(props: any) {
   // Detect screen width on mount and on resize
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // 768px is a common breakpoint for mobile
+      if (typeof window !== "undefined") {
+        setIsMobile(window.innerWidth <= 768); // 768px is a common breakpoint for mobile
+      }
     };
 
     handleResize(); // Check initial size
@@ -116,7 +118,12 @@ function Shoes(props: any) {
   const xPos = useTransform(
     scrollYProgress,
     [0, 0.35, 0.7, 1],
-    [0, xPositionValue, 0.2, (4.8 * 1432) / window.innerWidth]
+    [
+      0,
+      xPositionValue,
+      0.2,
+      typeof window !== "undefined" ? (4.8 * 1432) / window.innerWidth : 4.8,
+    ]
   );
   const yPos = useTransform(
     scrollYProgress,
@@ -124,8 +131,8 @@ function Shoes(props: any) {
     [
       -0.5,
       yPositionValue,
-      (-1 * 776) / window.innerHeight,
-      -2.2 * (window.innerHeight / 776),
+      typeof window !== "undefined" ? (-1 * 776) / window.innerHeight : -1,
+      typeof window !== "undefined" ? -2.2 * (window.innerHeight / 776) : -2.2,
     ]
   );
   const zPos = useTransform(

@@ -13,8 +13,10 @@ function Shoes(props: any) {
       [key: string]: any;
     };
   };
+
   const { scrollYProgress } = useScroll();
   const shoeRef = useRef<THREE.Group>(null!);
+
   const [dimensions, setDimensions] = useState({
     width: 1432, // Fallback values
     height: 776,
@@ -23,6 +25,7 @@ function Shoes(props: any) {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      // Code here runs only on the client side
       setIsMobile(window.innerWidth <= 768);
       const handleResize = () => {
         setDimensions({
@@ -38,14 +41,14 @@ function Shoes(props: any) {
     }
   }, []);
 
-  //initialize rotation val
+  // Initialize rotation and position values
   let xRotationValue: number;
   let yRotationValue: number;
   let zRotationValue: number;
-  //initialize position val
   let xPositionValue: number;
   let yPositionValue: number;
   let zPositionValue: number;
+
   switch (props.page2Status) {
     case 0:
       xRotationValue = 0.05;
@@ -170,7 +173,7 @@ function Shoes(props: any) {
       const scrollYPos = yPos.get();
       const scrollZPos = zPos.get();
 
-      //mobile
+      // Mobile
       const scrollXPosMobile = xPosMobile.get();
       const scrollYPosMobile = yPosMobile.get();
       const scrollZPosMobile = zPosMobile.get();

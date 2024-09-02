@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ReactLenis, useLenis } from "lenis/react";
 
 export const metadata: Metadata = {
   title: "HYPFO 334 | Elevate Your Game",

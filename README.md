@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+    <a href="https://healthiezz.vercel.app" target="_blank"><img src="public/logo.png" alt="logo" width="100" /></a>
+</p>
+<h1 align="center"><b>Core Align</b></h1>
 
-## Getting Started
+<p align="center">This website was created as a personal project to learn and experiment with React Three Fiber (R3F). Through building it, I explored 3D rendering, interactive models, and advanced web animations, applying these techniques to showcase Core Align's "Hypfo" shoes.</p>
 
-First, run the development server:
+<p align="center">
+<p align="center">
+    <a href="https://github.com/adlihidayat/core-align/blob/main/LICENSE" target="_blank">
+        <img src="https://img.shields.io/github/license/adlihidayat/core-align?style=flat-square" alt="licence" />
+    </a>
+    <a href="https://github.com/adlihidayat/core-align/fork" target="_blank">
+        <img src="https://img.shields.io/github/forks/adlihidayat/core-align?style=flat-square" alt="forks"/>
+    </a>
+    <a href="https://github.com/adlihidayat/core-align/stargazers" target="_blank">
+        <img src="https://img.shields.io/github/stars/adlihidayat/core-align?style=flat-square" alt="stars"/>
+    </a>
+    <a href="https://github.com/adlihidayat/core-align/issues" target="_blank">
+        <img src="https://img.shields.io/github/issues/adlihidayat/core-align?style=flat-square" alt="issues"/>
+    </a>
+    <a href="https://github.com/adlihidayat/core-align/pulls" target="_blank">
+        <img src="https://img.shields.io/github/issues-pr/adlihidayat/core-align?style=flat-square" alt="pull-requests"/>
+    </a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+    <a href="https://core-align.vercel.app/">Visit Website</a>
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 👋🏻 The Purpose of This Website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The website is designed to showcase Core Align's latest shoe model, "Hypfo 334" It offers a visually immersive experience, incorporating interactive 3D elements and smooth navigation, allowing users to explore the shoe's unique features. With intuitive scrolling and seamless transitions between sections, the site highlights the design, technology, and specifications of the Hypfo shoes, engaging users with a modern and responsive interface.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🔥 Features
 
-## Learn More
+Here are the features of this website:
 
-To learn more about Next.js, take a look at the following resources:
+- <b>Search Bar</b>, user can search the food easily by its name
+- <b>Filter</b>, the food can be showed by its type
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tools
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The website is built using a robust tech stack, incorporating cutting-edge technologies to ensure seamless performance and user experience
 
-## Deploy on Vercel
+- <b>Next js</b>, One of the most popular Javascript framework
+- <b>Tailwind CSS</b>, framework that make styling easier
+- <b>React Three Fiber (R3F)</b>, a React renderer for Three.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💿 Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To get started, simply visit our website at <https://core-align.vercel.app/>. Then follow these step.
+
+1. Click the browse button
+2. Start scrolling the page to start the 3d animation

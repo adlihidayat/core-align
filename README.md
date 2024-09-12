@@ -38,7 +38,7 @@ The website is designed to showcase Core Align's latest shoe model, "Hypfo 334" 
 The website is built using a robust tech stack, incorporating cutting-edge technologies to ensure seamless performance and user experience
 
 - <a href="https://nextjs.org/">Next js</a>, One of the most popular Javascript framework
-- <a href="[https://core-align.vercel.app/](https://tailwindcss.com/)">Tailwind CSS</a>, framework that make styling easier
+- <a href="https://tailwindcss.com/">Tailwind CSS</a>, framework that make styling easier
 - <a href="https://r3f.docs.pmnd.rs/">React Three Fiber (R3F)</a>, a React renderer for Three.js
 
 ## 💿 Usage

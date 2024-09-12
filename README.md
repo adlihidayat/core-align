@@ -32,20 +32,14 @@
 
 The website is designed to showcase Core Align's latest shoe model, "Hypfo 334" It offers a visually immersive experience, incorporating interactive 3D elements and smooth navigation, allowing users to explore the shoe's unique features. With intuitive scrolling and seamless transitions between sections, the site highlights the design, technology, and specifications of the Hypfo shoes, engaging users with a modern and responsive interface.
 
-## 🔥 Features
-
-Here are the features of this website:
-
-- <b>Search Bar</b>, user can search the food easily by its name
-- <b>Filter</b>, the food can be showed by its type
 
 ## 🛠️ Tools
 
 The website is built using a robust tech stack, incorporating cutting-edge technologies to ensure seamless performance and user experience
 
-- <b>Next js</b>, One of the most popular Javascript framework
-- <b>Tailwind CSS</b>, framework that make styling easier
-- <b>React Three Fiber (R3F)</b>, a React renderer for Three.js
+- <a href="https://nextjs.org/">Next js</a>, One of the most popular Javascript framework
+- <a href="[https://core-align.vercel.app/](https://tailwindcss.com/)">Tailwind CSS</a>, framework that make styling easier
+- <a href="https://r3f.docs.pmnd.rs/">React Three Fiber (R3F)</a>, a React renderer for Three.js
 
 ## 💿 Usage
 
